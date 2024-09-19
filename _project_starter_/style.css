@@ -14,3 +14,41 @@ body {
   overflow: hidden;
   margin: 0;
 }
+
+main{
+  display: flex;
+  width: 90vw;
+}
+
+.card {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 50px;
+  cursor: pointer;
+  /*kind of the width size of the img*/
+  flex: .5;
+  margin: 10px;
+  transition: all 500ms ease-in;
+  -webkit-transition: all 500ms ease-in;
+}
+
+.card h3{
+  /*By defining the font size it also changes the img size*/
+  font-size: 3rem;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.card.open {
+  flex: 5;
+}
+
+.card.open h3{
+  opacity: 1;
+}
