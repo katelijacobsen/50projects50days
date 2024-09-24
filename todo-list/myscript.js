@@ -19,7 +19,8 @@ todoForm.addEventListener("submit", (e) => {
     li.addEventListener("click", () => {
         li.classList.toggle("completed")
     });
-    
+    //Man kan se e lidt som den overskriver browsersens defaults.
+    //I stedet for at der vises indhold vil der direkte være fokus på eventListener
     li.addEventListener("contextmenu", (e) => {
         e.preventDefault();
         console.log(e.button)
